@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Container For The Dict. App -->
+    <div class="container">
+        <h1 class="heading">Dictionary App</h1>
+        <!-- Input Field For Searching -->
+        <div class="input">
+            <input
+             onkeypress="handle(event)"
+             type="text"
+             class="search-field"
+             placeholder="Type and Press Enter">
+        </div>
+        <!-- Displaying The Result -->
+        <div class="result">
+            <h1 id="word"></h1>
+            <p class="phonetics"></p>
+            <audio src="//ssl.gstatic.com/dictionary/static/sounds/20200429/hello--_gb_1.mp3" class="audio" controls></audio>
+            <p class="heading-text">Meaning</p>
+            <p class="word-definition"></p>
+            <p class="heading-text">Synonyms</p>
+            <div class="synonyms">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
